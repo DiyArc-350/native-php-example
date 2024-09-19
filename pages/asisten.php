@@ -10,9 +10,6 @@ require '../functions/functions.php';
 
 $asisten = query("SELECT * FROM asisten", []);
 
-// while ($as = mysqli_fetch_assoc($asisten)) {
-//     $asisten[] = $as;
-// }
 
 ?>
 <!DOCTYPE html>

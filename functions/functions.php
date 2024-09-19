@@ -145,7 +145,7 @@ function updateJadwal($data) {
 function delateAsisten($id) {
     global $conn;
     // Clean the input data
-    $id = mysqli_real_escape_string($conn, htmlspecialchars("id"));
+    $id = mysqli_real_escape_string($conn, htmlspecialchars($id));
 
     // Prepared statement
     $stmt = $conn->prepare("DELETE FROM asisten WHERE id = ?");
@@ -160,7 +160,7 @@ function delateAsisten($id) {
 function delateShift($id) {
     global $conn;
    // Clean the input data
-    $id = mysqli_real_escape_string($conn, htmlspecialchars("id"));
+    $id = mysqli_real_escape_string($conn, htmlspecialchars($id));
 
     // Prepared statement
     $stmt = $conn->prepare("DELETE FROM shift WHERE id = ?");
@@ -175,7 +175,7 @@ function delateShift($id) {
 function delateJadwal($id) {
     global $conn;
     // Clean the input data
-    $id = mysqli_real_escape_string($conn, htmlspecialchars("id"));
+    $id = mysqli_real_escape_string($conn, htmlspecialchars($id));
 
     // Prepared statement
     $stmt = $conn->prepare("DELETE FROM shift_asisten WHERE id = ?");

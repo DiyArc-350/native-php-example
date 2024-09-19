@@ -4,7 +4,7 @@ session_start();
 if( !isset($_SESSION["login"])){
     header("Location: ../auth/login.php");
     exit;
-}
+}   
 
 // Koneksi ke functions.php
 require "../../functions/functions.php";
